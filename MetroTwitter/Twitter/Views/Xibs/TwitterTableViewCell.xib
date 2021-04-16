@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwitterTableViewCell" customModule="MetroTwitter" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TwitterTableViewCell" customModule="MetroTwitter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="356"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="N1y-ou-6Yi">
+                    <rect key="frame" x="72" y="13" width="144" height="38"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Московское метро" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcg-sn-aOn">
+                            <rect key="frame" x="0.0" y="0.0" width="144" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="textColor" name="Twitter Title"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@MetroOperativno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xj2-bk-mLN">
+                            <rect key="frame" x="0.0" y="22" width="114.5" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" name="Twitter Caption"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="metro_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Sbq-t4-4iA">
+                    <rect key="frame" x="24" y="12" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="DEq-h3-7cf"/>
+                        <constraint firstAttribute="width" constant="40" id="wxU-tO-3iR"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-twitter" translatesAutoresizingMaskIntoConstraints="NO" id="37O-Xh-yAA">
+                    <rect key="frame" x="331" y="16" width="24" height="24"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter_Verified" translatesAutoresizingMaskIntoConstraints="NO" id="CeE-nz-Ihk">
+                    <rect key="frame" x="223" y="13" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="3mb-f0-XMJ"/>
+                        <constraint firstAttribute="width" constant="16" id="XSd-of-fhY"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hhE-JY-L2g">
+                    <rect key="frame" x="24" y="68" width="331" height="235"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="С 12 сентября на " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvF-6Z-dF3">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="69"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" name="Twitter Title"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" image="logo-twitter" translatesAutoresizingMaskIntoConstraints="NO" id="jc9-WR-R6x">
+                            <rect key="frame" x="0.0" y="85" width="331" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="GnK-5l-nU2"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rke-OJ-o2M">
+                    <rect key="frame" x="24" y="327" width="110" height="16"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="aNo-c4-hdI">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="16"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatbubble-outline" translatesAutoresizingMaskIntoConstraints="NO" id="fCY-vs-qvw">
+                                    <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEH-Ae-81U">
+                                    <rect key="frame" x="22" y="0.0" width="8" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" name="Twitter Caption"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="7bO-ea-54R">
+                            <rect key="frame" x="40" y="0.0" width="30" height="16"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="retweet" translatesAutoresizingMaskIntoConstraints="NO" id="SmB-fq-c35">
+                                    <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vi6-08-8kX">
+                                    <rect key="frame" x="22" y="0.0" width="8" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" name="Twitter Caption"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="kMO-ZD-4Eh">
+                            <rect key="frame" x="80" y="0.0" width="30" height="16"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter-favorite" translatesAutoresizingMaskIntoConstraints="NO" id="IXg-tW-ROh">
+                                    <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsO-8f-bJH">
+                                    <rect key="frame" x="22" y="0.0" width="8" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" name="Twitter Caption"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 часов назад" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLg-dx-J4P">
+                    <rect key="frame" x="266" y="327" width="89" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" name="Twitter Caption"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" name="Background"/>
+            <constraints>
+                <constraint firstItem="rke-OJ-o2M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="01c-D7-jn0"/>
+                <constraint firstItem="N1y-ou-6Yi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="0Z2-8Q-DsH"/>
+                <constraint firstItem="37O-Xh-yAA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="D3A-hx-aA2"/>
+                <constraint firstAttribute="trailing" secondItem="hhE-JY-L2g" secondAttribute="trailing" constant="20" id="Dpe-bm-5en"/>
+                <constraint firstItem="CeE-nz-Ihk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="GhY-Kc-4zU"/>
+                <constraint firstAttribute="trailing" secondItem="37O-Xh-yAA" secondAttribute="trailing" constant="20" id="K83-GV-TXG"/>
+                <constraint firstItem="Sbq-t4-4iA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="UsL-QL-ajR"/>
+                <constraint firstAttribute="bottom" secondItem="rke-OJ-o2M" secondAttribute="bottom" constant="13" id="h4r-Hw-6fa"/>
+                <constraint firstAttribute="bottom" secondItem="vLg-dx-J4P" secondAttribute="bottom" constant="13" id="ieS-Hn-eoT"/>
+                <constraint firstItem="hhE-JY-L2g" firstAttribute="top" secondItem="Sbq-t4-4iA" secondAttribute="bottom" constant="16" id="keZ-8m-hbz"/>
+                <constraint firstItem="N1y-ou-6Yi" firstAttribute="leading" secondItem="Sbq-t4-4iA" secondAttribute="trailing" constant="8" id="ng2-PU-63r"/>
+                <constraint firstAttribute="trailing" secondItem="vLg-dx-J4P" secondAttribute="trailing" constant="20" id="sD4-8T-diM"/>
+                <constraint firstItem="hhE-JY-L2g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="tyX-dK-wMu"/>
+                <constraint firstItem="CeE-nz-Ihk" firstAttribute="leading" secondItem="N1y-ou-6Yi" secondAttribute="trailing" constant="7" id="v8u-YM-WbM"/>
+                <constraint firstItem="rke-OJ-o2M" firstAttribute="top" secondItem="hhE-JY-L2g" secondAttribute="bottom" constant="24" id="vCk-AL-r9e"/>
+                <constraint firstItem="Sbq-t4-4iA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="wkg-6A-VLM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bodyLabel" destination="DvF-6Z-dF3" id="nDJ-hD-gZ3"/>
+                <outlet property="favoriteLabel" destination="nsO-8f-bJH" id="kjn-f3-ctI"/>
+                <outlet property="postImageView" destination="jc9-WR-R6x" id="d2H-GR-VYk"/>
+                <outlet property="retweetsLabel" destination="vi6-08-8kX" id="hLG-7p-3yr"/>
+                <outlet property="timeLabel" destination="vLg-dx-J4P" id="o2d-66-HW7"/>
+            </connections>
+            <point key="canvasLocation" x="-196.37681159420291" y="120.53571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chatbubble-outline" width="16" height="16"/>
+        <image name="logo-twitter" width="24" height="24"/>
+        <image name="metro_logo" width="36" height="36"/>
+        <image name="retweet" width="16" height="16"/>
+        <image name="twitter-favorite" width="16" height="16"/>
+        <image name="twitter_Verified" width="15" height="16"/>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Twitter Caption">
+            <color red="0.59607843137254901" green="0.59999999999999998" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Twitter Title">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

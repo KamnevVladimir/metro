@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwitterLoadingView" customModule="MetroTwitter" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="Htf-jm-4Ck" id="hU5-kp-hOw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="211"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcs-L7-yH8">
+                    <rect key="frame" x="0.0" y="0.0" width="286" height="211"/>
+                    <color key="backgroundColor" name="Background"/>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Htf-jm-4Ck">
+                    <rect key="frame" x="133" y="70" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Загрузка..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDo-T7-Lyd">
+                    <rect key="frame" x="0.0" y="155" width="286" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="zcs-L7-yH8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="906-HD-wIU"/>
+                <constraint firstItem="LDo-T7-Lyd" firstAttribute="top" secondItem="Htf-jm-4Ck" secondAttribute="bottom" constant="65" id="B1O-GN-sdF"/>
+                <constraint firstItem="Htf-jm-4Ck" firstAttribute="centerX" secondItem="zcs-L7-yH8" secondAttribute="centerX" id="EGv-Fr-apf"/>
+                <constraint firstAttribute="bottom" secondItem="zcs-L7-yH8" secondAttribute="bottom" id="H6x-x4-whq"/>
+                <constraint firstItem="zcs-L7-yH8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ORR-6a-qyV"/>
+                <constraint firstItem="LDo-T7-Lyd" firstAttribute="leading" secondItem="zcs-L7-yH8" secondAttribute="leading" id="U6F-0H-sUw"/>
+                <constraint firstItem="Htf-jm-4Ck" firstAttribute="top" secondItem="zcs-L7-yH8" secondAttribute="top" constant="70" id="gCq-NM-0lp"/>
+                <constraint firstAttribute="trailing" secondItem="zcs-L7-yH8" secondAttribute="trailing" id="quR-IT-OJ6"/>
+                <constraint firstItem="zcs-L7-yH8" firstAttribute="trailing" secondItem="LDo-T7-Lyd" secondAttribute="trailing" id="thU-ck-u78"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="227.536231884058" y="-78.013392857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

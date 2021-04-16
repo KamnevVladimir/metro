@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwitterErrorsView" customModule="MetroTwitter" customModuleProvider="target">
+            <connections>
+                <outlet property="errorButton" destination="P1e-Df-qpb" id="hYv-hH-ebf"/>
+                <outlet property="errorDescriptionLabel" destination="Yfe-fa-UM5" id="5v9-7q-1KP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="259"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7c-vX-ohK">
+                    <rect key="frame" x="0.0" y="0.0" width="295" height="259"/>
+                    <color key="backgroundColor" name="Background"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1e-Df-qpb">
+                    <rect key="frame" x="0.0" y="214.5" width="295" height="44"/>
+                    <color key="backgroundColor" name="Light Red"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="FPQ-4v-Uwl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <state key="normal" title="Попробовать снова">
+                        <color key="titleColor" name="Bright Red"/>
+                    </state>
+                    <connections>
+                        <action selector="errorButtonTapped:" destination="-1" eventType="touchUpInside" id="u2u-HS-pGX"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="x-circle" translatesAutoresizingMaskIntoConstraints="NO" id="QLm-LQ-7Nh">
+                    <rect key="frame" x="83.5" y="0.0" width="128" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="Jbc-kz-vcR"/>
+                        <constraint firstAttribute="width" constant="128" id="bZw-ts-Us8"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wm1-p9-Brh">
+                    <rect key="frame" x="0.0" y="144" width="295" height="54.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ошибка" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9K-Zb-eHB">
+                            <rect key="frame" x="0.0" y="0.0" width="295" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfe-fa-UM5">
+                            <rect key="frame" x="0.0" y="34" width="295" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="Light Gray"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="EOT-Ju-Lib"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="o7c-vX-ohK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0zC-ig-TXC"/>
+                <constraint firstItem="Wm1-p9-Brh" firstAttribute="leading" secondItem="o7c-vX-ohK" secondAttribute="leading" id="GHV-b7-F0H"/>
+                <constraint firstItem="o7c-vX-ohK" firstAttribute="trailing" secondItem="Wm1-p9-Brh" secondAttribute="trailing" id="L8v-GU-IfT"/>
+                <constraint firstItem="o7c-vX-ohK" firstAttribute="trailing" secondItem="EOT-Ju-Lib" secondAttribute="trailing" id="Ni3-VA-AIw"/>
+                <constraint firstItem="o7c-vX-ohK" firstAttribute="leading" secondItem="EOT-Ju-Lib" secondAttribute="leading" id="ORs-Av-l8B"/>
+                <constraint firstItem="QLm-LQ-7Nh" firstAttribute="top" secondItem="o7c-vX-ohK" secondAttribute="top" id="Rdl-ky-CpE"/>
+                <constraint firstItem="o7c-vX-ohK" firstAttribute="bottom" secondItem="EOT-Ju-Lib" secondAttribute="bottom" id="U4w-oi-RS4"/>
+                <constraint firstItem="P1e-Df-qpb" firstAttribute="leading" secondItem="o7c-vX-ohK" secondAttribute="leading" id="Wzp-Nh-I1n"/>
+                <constraint firstItem="o7c-vX-ohK" firstAttribute="trailing" secondItem="P1e-Df-qpb" secondAttribute="trailing" id="X07-E0-2IB"/>
+                <constraint firstItem="P1e-Df-qpb" firstAttribute="top" secondItem="Wm1-p9-Brh" secondAttribute="bottom" constant="16" id="a4W-tY-zvj"/>
+                <constraint firstItem="QLm-LQ-7Nh" firstAttribute="centerX" secondItem="o7c-vX-ohK" secondAttribute="centerX" id="aWY-iR-k8M"/>
+                <constraint firstItem="Wm1-p9-Brh" firstAttribute="top" secondItem="QLm-LQ-7Nh" secondAttribute="bottom" constant="16" id="lvr-Dx-CGO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-136.95652173913044" y="-67.96875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="x-circle" width="128" height="128"/>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Bright Red">
+            <color red="0.85490196078431369" green="0.12549019607843137" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light Gray">
+            <color red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light Red">
+            <color red="0.98039215686274506" green="0.94117647058823528" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
